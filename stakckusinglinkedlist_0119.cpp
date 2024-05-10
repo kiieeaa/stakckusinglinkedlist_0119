@@ -9,5 +9,12 @@ public:
 	Node* next;
 
 	Node() {
+		next = NULL;
+	}
+};
+
+class Stack {
+
+
 
 
