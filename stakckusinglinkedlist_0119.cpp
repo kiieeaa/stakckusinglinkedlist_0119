@@ -19,8 +19,8 @@ private:
 public:
 	Stack() {
 		top = NULL; // Initialize the stack with a null top pointen
-	
-	
+
+
 	}
 
 
@@ -35,7 +35,7 @@ public:
 
 	// Pop operation: Remove the topmost element from the stack
 	void pop() {
-		if (isEmpty()) {
+		if (isEMPTY()) {
 			cout << "Stack is empty." << endl;
 		}
 		cout << "Stack is empty." << endl; cout << "Popped value:" << top->data << endl;
@@ -55,6 +55,18 @@ public:
 
 			}
 			cout << endl;
+		}
+	}
+
+
+	bool isEMPTY() {
+		return top == NULL;
+	}
+
+};
+
+
+
 
 
 
